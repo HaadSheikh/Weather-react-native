@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Weather-App",
+    "name": "Weather",
     "slug": "Weather-App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/weather-2019-02-07.webp",
     "scheme": "weatherapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,25 +13,26 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/weather-2019-02-07.webp",
+        "backgroundColor": "#2C3E50"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/weather-2019-02-07.webp"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/weather-2019-02-07.webp",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#2C3E50"
+
         }
       ]
     ],
