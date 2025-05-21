@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
+import { MaterialIcons } from "@expo/vector-icons";
+import * as Location from "expo-location";
+import React, { useEffect, useState } from "react";
 import {
-  SafeAreaView,
-  TextInput,
-  Text,
   ActivityIndicator,
-  TouchableOpacity,
+  Dimensions,
   Image,
-  View,
+  ImageBackground,
+  SafeAreaView,
   ScrollView,
   StyleSheet,
-  ImageBackground,
-  Dimensions,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
-import * as Location from "expo-location";
-import { MaterialIcons } from "@expo/vector-icons";
 import bgimg from "../assets/images/weahrer.webp";
 
-const WeatherApp = () => {
+const Index = () => {
   const [userinp, setUserinp] = useState("");
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -187,6 +187,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.6)",
     padding: 16,
+    paddingTop:50,
   },
   scrollViewContent: {
     paddingBottom: 30,
@@ -319,4 +320,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WeatherApp;
+export default Index;
